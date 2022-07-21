@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.game-board{
+    width: 100%;
+    height:  500px;
+    border-bottom: 15px solid rgb(17, 204, 0);
+    background: linear-gradient(#87CEEB,#E0F6FF);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.muro {
+    position: absolute;
+    bottom: 0;
+    width:  40px;
+    border: solid 2px black;
+    animation: muro-animation 1.5s infinite linear;
+}
+
+.fundo {
+    position: absolute;
+    width:  450px;
+    animation: fundo-animation 20s infinite linear;
+}
+
+.gd {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 200px;
+    bottom: -10px;
+}
+
+.gameOver {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    display: none;
+}
+
+.gameOverTxt {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    display: none;
+}
+
+.jump {
+    animation: jump 700ms ease-out;
+}
+
+
+
+@keyframes muro-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes fundo-animation {
+    from {
+        right: -450px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+
+@keyframes jump {
+    0% {
+        bottom: -10px;
+    }
+    40% {
+        bottom: 80px;
+    }
+    50% {
+        bottom: 80px;
+    }
+    60% {
+        bottom: 80px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
