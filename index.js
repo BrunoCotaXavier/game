@@ -9,6 +9,6 @@ app.get('/',(request,response)=>{
     response.render("index")
 })
 
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('Servidor rodando')
 })
