@@ -8,12 +8,12 @@ const counter = document.getElementById('counter')
 
 const jump = () => {
     gd.classList.add('jump')
-    gd.src = "./imgs/gdJump.png"
+    gd.src = "./images/gdJump.png"
     setTimeout(() => {
         gd.classList.remove('jump')
     }, 700)
     setTimeout(() => {
-        gd.src = "./imgs/gdGif.gif"
+        gd.src = "./images/gdGif.gif"
     }, 400)
 }
 
@@ -34,7 +34,7 @@ const loop = setInterval(()=> {
         gd.style.animation = "none";
         gd.style.bottom = `${gdPosition}px`;
 
-        gd.src = "./imgs/gdGameOver.png"
+        gd.src = "./images/gdGameOver.png"
         gd.style.width = "200px"
         gd.style.marginBottom = "-5px"
         gd.style.position = "absolosute"
