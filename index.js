@@ -5,7 +5,7 @@ app.use(express.static('views'))
 app.set('view engine', 'ejs');
 
 app.get('/',(request,response)=>{
-    response.render("index.ejs")
+    response.render("index")
 })
 
 app.listen(3000, () => {
