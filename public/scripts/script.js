@@ -14,7 +14,7 @@ const jump = () => {
     }, 700)
     setTimeout(() => {
         gd.src = "./images/gdGif.gif"
-    }, 300)
+    }, 350)
 }
 
 const loop = setInterval(()=> {
